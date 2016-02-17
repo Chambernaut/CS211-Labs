@@ -21,7 +21,7 @@ public class Lab_2
     {
       if(charArray[b] > 0)
       {
-        String temp = charArray[b] + "-" + (char)b;
+        String temp = charArray[b] + "." + (char)b;
         freqList.add(temp);
       }
     }
@@ -30,10 +30,10 @@ public class Lab_2
 
     for(int c = freqList.size() - 1; c >= 0; c--)
     {
-      String[] tempArray = freqList.get(c).split("-");
+      String[] tempArray = freqList.get(c).split("\\.");
       System.out.print(tempArray[1] + " appeared " + tempArray[0]);
       System.out.println(" times.");
     }
-    
+
   }
 }
